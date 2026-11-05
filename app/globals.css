@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Mint Green Theme (Exact Match to User Upload #D9FBE0) */
+  --color-mint-navbar: #D9FBE0;
+  --color-mint-light: #EBFDF0;
+  --color-mint-border: #BDE8C7;
+  --color-pine-deep: #183323;
+  --color-pine-moss: #355442;
+  --color-pine-text: #0D5C2C;
+
+  /* Signature Brand Maroon Red */
+  --color-maroon-primary: #800000;
+  --color-maroon-deep: #500208;
+  --color-maroon-hover: #660000;
+  --color-maroon-tint: rgba(128, 0, 0, 0.08);
+
+  /* Royal Champagne Gold */
+  --color-gold-champagne: #D4AF37;
+  --color-gold-light: #F8DE97;
+  --color-gold-button: #ECC872;
+  --color-gold-vibrant: #FFD700;
+
+  /* Crisp Luxury White & Neutrals */
+  --color-white-pure: #FFFFFF;
+  --color-white-soft: #FAFCFA;
+  --color-surface-card: #FFFFFF;
+  --color-text-dark: #1F2937;
+  --color-text-muted: #6B7280;
+
+  /* Official WhatsApp */
+  --color-whatsapp: #25D366;
+}
+
+body {
+  background-color: #FAFCFA;
+  color: #1F2937;
+  font-family: var(--font-montserrat), Montserrat, system-ui, sans-serif;
+  overflow-x: hidden;
+  selection-background-color: #D9FBE0;
+  selection-color: #183323;
+}
+
+::selection {
+  background-color: #D9FBE0;
+  color: #183323;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F0F7F2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #BDE8C7;
+  border-radius: 4px;
+  border: 1px solid rgba(24, 51, 35, 0.1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #800000;
+}
+
+/* Luxury White Card Theme Utilities */
+.card-white-luxury {
+  background: #FFFFFF;
+  color: #1F2937;
+  border: 1px solid #BDE8C7;
+  box-shadow: 0 10px 30px rgba(24, 51, 35, 0.06);
+}
+
+.card-mint-luxury {
+  background: #D9FBE0;
+  color: #183323;
+  border: 1px solid #BDE8C7;
+  box-shadow: 0 10px 25px rgba(13, 92, 44, 0.08);
+}
+
+.card-maroon-luxury {
+  background: linear-gradient(135deg, #500208 0%, #350005 100%);
+  color: #FFFFFF;
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  box-shadow: 0 20px 40px rgba(80, 2, 8, 0.25);
+}
